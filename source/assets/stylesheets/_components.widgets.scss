@@ -1,0 +1,97 @@
+/*
+ * Widgets
+ */
+
+.widget {
+
+  @include container-padding(1.5);
+  position: relative;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.widget-title {
+
+  font-size: ms(1);
+  line-height: ms(1);
+
+}
+
+/*
+ * Widget helpers
+ */
+
+.widget hr {
+
+  width: rem(160);
+  padding: 0;
+  margin: $unit-default auto;
+  border-top: 2px solid $color-brand-secondary;
+
+  @include breakpoint(medium) {
+
+    margin-top: $unit-l;
+    margin-bottom: $unit-l;
+
+  }
+
+}
+
+
+/*
+ * Secondary Widgets
+ *
+ * Full width widgets after the content
+ */
+
+#after-header-widgets .widget,
+#before-content-widgets .widget,
+#content-widgets .widget,
+#secondary .widget {
+
+  // padding-left: 0;
+  // padding-right: 0;
+  text-align: center;
+
+  > * {
+
+    position: relative;
+
+  }
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    background-color: $color-brand-quaternary;
+
+    content: "";
+
+  }
+
+}
+
+
+/*
+ * Widget text
+ *
+ * Default text widget styles
+ */
+
+.widget_text {
+
+  background-color: #fff; // $color-grey-10
+
+  &:before {
+
+    background-color: #fff!important; // $color-grey-10
+
+  }
+
+}

@@ -1,0 +1,182 @@
+/* =Header
+===================================================== */
+
+// Header
+//
+// Header of the site (includes site branding and navigation)
+// Animated lights based on the pen by Umair Razzaq http://codepen.io/umairrazzaq/pen/dMQbzb
+//
+// Markup: header.html
+//
+// Style guide: 6.header
+
+.site-header {
+
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: fixed;
+  background-image: $site-hero-path-small;
+
+  @include breakpoint(medium) {
+
+    background-image: $site-hero-path-large;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+
+  @include transition-fast();
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba($color-brand-tertiary, $site-hero-overlay);
+
+    content: "";
+
+  }
+
+  > * {
+
+    position: relative;
+    z-index: $z-index-header;
+
+  }
+
+}
+
+/*
+ * Lightbeams
+ *
+ * Decoration on the header background
+ *
+ * Based on the pen by Umair Razzaq
+ * http://codepen.io/umairrazzaq/pen/dMQbzb
+ */
+
+/* Only visible on home page */
+
+$lightbeams-opacity-weak: .05;
+$lightbeams-opacity-normal: .1;
+$lightbeams-opacity-strong: .2;
+
+.home .site-header .site-branding:before,
+.home .site-header .site-branding:after {
+
+  position: absolute;
+  z-index: -1;
+  bottom: -10vh;
+  left: 60%;
+
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -40vh;
+
+  border-top: 110vh solid white;
+  border-left: 40vh solid transparent;
+  border-right: 40vh solid transparent;
+
+  content: "";
+  opacity: $lightbeams-opacity-normal;
+
+  transform-origin: 100% 100%;
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+
+}
+
+.home .site-header .site-branding:before {
+
+  transform: skewX(50deg);
+  animation: search1 5s infinite 5s;
+
+}
+
+.home .site-header .site-branding:after {
+
+  transform: skewX(-50deg);
+  animation: search2 5s infinite 5s;
+
+}
+
+@keyframes search1 {
+
+  0% {
+    transform: skewX(50deg);
+  }
+
+  5% {
+    transform: skewX(50deg);
+  }
+
+  20% {
+    transform: skewX(-60deg);
+  }
+
+  50% {
+    transform: skewX(-50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  80% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  100% {
+    transform: skewX(50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+}
+
+@keyframes search2 {
+
+  0% {
+    transform: skewX(-50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  5% {
+    transform: skewX(-50deg);
+  }
+
+  10% {
+    opacity: $lightbeams-opacity-weak;
+  }
+
+  30% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  40% {
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  50% {
+    transform: skewX(60deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  60% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  80% {
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  100% {
+    transform: skewX(-50deg);
+  }
+
+}
