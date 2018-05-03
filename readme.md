@@ -1,12 +1,22 @@
 # WordCamp Lausanne 2018 CSS
 
-This is a clone of WordCamp Europe 2017 CSS.
+This is a clone of WordCamp Europe 2017 CSS. 
 
-En français: [une documentation](docs/docs.md) sur l'utilisation de ce thème, pour WordCamp Lausanne 2018.
+En français: ce projet contient les styles CSS du site WordCamp Lausanne 2018.
 
-**Work in progress.** See the current version of the generated [style guide](https://lucijanblagonic.github.io/wceu-2017/styleguide/).
+* Voir [le site WordCamp Lausanne 2018](https://2018.lausanne.wordcamp.org/).
+* Voir [le Style Guide](https://wp-romandie.github.io/wp-lausanne-2018-css/styleguide/).
+* Lire [notre documentation](docs/docs.md) sur ce système CSS.
 
-![Style guide created with KSS methodology](screenshot.png)
+## Lectures recommandées
+
+- [New Wordcamp Theme For The Community](https://2017.europe.wordcamp.org/2016/12/28/new-wordcamp-theme-for-the-community/), December 28, 2016 by Sonja Leix
+- [WCEU17 design team is building improved and more flexible WordCamp theme](https://make.wordpress.org/community/2016/12/28/wceu17-design-team-is-building-improved-and-more-flexible-wordcamp-theme/)
+- [Using Style Guides for modular WordCamp designs](https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/), May 9, 2017	 by Lucijan Blagonic
+
+Ci-dessous, le contenu du README original créé pour WCEU 2017:
+
+***
 
 ## About
 
