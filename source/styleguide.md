@@ -1,6 +1,6 @@
-# WordCamp Europe 2017
+# WordCamp Lausanne 2018
 
-Style guide for the [WordCamp Europe 2017](https://2017.europe.wordcamp.org) theme.
+Style guide for the [WordCamp Europe 2018](https://2018.lausanne.wordcamp.org/) theme.
 
 ## Style guide
 
