@@ -15,7 +15,7 @@
 
   &:before {
 
-    background-image: $image-pattern-01;
+    // background-image: $image-pattern-01;
     background-color: $color-brand-tertiary!important;
     background-size: 120px;
     background-attachment: fixed;
@@ -25,7 +25,7 @@
 
   .widget-title {
 
-    color: $color-brand-secondary;
+    color: #fff;
   }
 
   p {
