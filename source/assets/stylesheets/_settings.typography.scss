@@ -3,13 +3,11 @@
 
 // Typography
 //
-// Main fonts for the WordCamp Europe 2016 theme are [Ingra](https://typekit.com/fonts/ingra) and [Mostra Nuova Alt D](https://typekit.com/fonts/mostra-nuova).
+// Main fonts for the WordCamp Lausanne 2018 theme are Raleway.
 //
-// **Mostra Nuova Alt D** is used as the font for WordCamp Europe logo and for all headlines.
+// **Raleway** is used both for all headlines, and for body text, buttons, forms etc.
 //
-// **Ingra** is used for body text, buttons, forms etc.
-//
-// Fonts are served from Typekit.
+// Fonts are served from Google Fonts.
 //
 // Style guide: 1.typography
 
@@ -18,8 +16,8 @@ $ms-base: 1em;
 $ms-ratio: 1.25;
 
 /* Fonts */
-$font-brand-primary:              "ingra", $helvetica;
-$font-brand-secondary:            "mostra-nuova-alt-d", $helvetica;
+$font-brand-primary:              "Raleway", $helvetica;
+$font-brand-secondary:            $font-brand-primary;
 
 /* Font use case */
 $font-body:                       $font-brand-primary;
