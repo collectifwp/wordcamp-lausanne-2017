@@ -280,8 +280,8 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  * Links
  */
 
-$color-link:                 $local-copper;
-$color-link-hover:           $local-gold;
+$color-link:                 $local-gold;
+$color-link-hover:           $local-copper;
 $color-link-focus:           mix($local-gold, #000, 70%);
 $color-link-visited:         mix($local-gold, #fff, 50%);
 
