@@ -231,11 +231,11 @@
 }
 
 /* Local (only to be used in this file) */
-$local-thunder: #2D282D;
+$local-thunder: #1C3F58; // Bleu sombre
 $local-ash: tint($local-thunder, 20%);
 $local-smoke: tint($local-thunder, 70%);
-$local-gold: #E6AA50;
-$local-copper: #CC9966;
+$local-gold: #D34516; // Rouge officiel
+$local-copper: #9A0500; // Rouge plus sombre
 $local-linnen: tint($local-copper,80%);
 $local-purple: #614787; // was #8282BE
 $local-offblack: #1d242a;
