@@ -39,14 +39,14 @@ $box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
 
 /* Logo size */
 $site-logo-width:               360px; // Width of the image/element
-$site-logo-height:              360px; // Height of the image/element
-$site-logo-proportion:          .5; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
-$site-logo-path:                url('https://2017.europe.wordcamp.org/files/2017/03/logo-wceu17-symbol.png'); // Logo image
-// $site-logo-path:                url('https://2017.europe.wordcamp.org/files/2016/11/logo-wceu17-dark-icon.png'); // Logo image
+$site-logo-height:              216px; // Height of the image/element
+$site-logo-proportion:          1; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
+$site-logo-path:                url('https://2018.lausanne.wordcamp.org/files/2018/04/logo-lausanne-2018-432p.png'); // Logo image
+
 
 /* Hero */
-$site-hero-path-small:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-mobile.jpg'); // Background image
-$site-hero-path-large:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-desktop.jpg'); // Background image
+$site-hero-path-small:          url('https://2018.lausanne.wordcamp.org/files/2018/04/header-lausanne-02-mobile-40pc.jpg'); // Background image
+$site-hero-path-large:          url('https://2018.lausanne.wordcamp.org/files/2018/04/header-lausanne-02-desktop-40pc.jpg'); // Background image
 $site-hero-overlay:             .6; // Image overlay color opacity
 
 /* Media queries */
