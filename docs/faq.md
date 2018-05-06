@@ -34,4 +34,21 @@ $extra-large-value:             80em; // 1280px
 
 Le basculement p.ex. du menu mobile vers desktop se fait avec `@include breakpoint(small) {}`.
 
+## Comment se fait-il que les styles de base des liens (hover, visited) ne sont pas définis?
+
+Excellente question. Les couleurs bleu / violet, etc, sont définis dans les styles minimalistes de CampSite:
+
+```
+a {
+  color: royalblue;
+}
+a:visited {
+  color: purple;
+}
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+```
+
+Ils sont surchargés dans _elements.links.scss mais étrangement a:visited a été oublié.
 

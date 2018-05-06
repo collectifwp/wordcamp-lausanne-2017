@@ -20,6 +20,12 @@ a {
   text-decoration: none;
   @include transition-fast();
 
+  &:visited {
+
+    color: $color-link;
+  
+  }
+
   &:hover {
 
     color: $color-link-hover;
@@ -40,11 +46,5 @@ a {
     text-decoration: none;
 
   }
-
-  // &:visited {
-
-    // color: shade($color-link, 50%);
-
-  // }
 
 }
