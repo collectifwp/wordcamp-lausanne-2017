@@ -24,9 +24,12 @@
 // <input class="{{modifier_class}}" type="submit" value="Input Submit">
 //
 // Style guide: 6.buttons
+// The $all-buttons variable is defined in: bourbon > addons > buttons
 
 .button,
-#{$all-buttons} {
+#{$all-buttons},
+.wp-block-button .wp-block-button__link
+{
 
   /* Positioning */
   position: relative;
