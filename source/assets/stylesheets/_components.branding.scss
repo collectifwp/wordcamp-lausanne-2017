@@ -60,13 +60,13 @@
   a {
 
     display: block;
-    color: $color-link-hover;
+    color: #fff;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-link;
+      color: $color-text-invert;
       text-decoration: none;
 
     }
