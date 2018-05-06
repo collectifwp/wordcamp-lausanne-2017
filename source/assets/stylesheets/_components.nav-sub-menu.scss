@@ -136,6 +136,12 @@
 
     }
 
+    .current-menu-item > a {
+    
+        color: #fff;
+    
+    }
+
   }
 
   @include breakpoint(medium) {
