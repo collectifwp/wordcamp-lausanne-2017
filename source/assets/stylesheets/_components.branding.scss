@@ -103,8 +103,5 @@
   font-family: $font-body;
   font-weight: $regular;
   text-transform: none;
-  // color: $color-text-weak-invert;
-
-  color: hsla(0,0%,100%,0.8);
-
+  color: $color-text-invert;
 }
