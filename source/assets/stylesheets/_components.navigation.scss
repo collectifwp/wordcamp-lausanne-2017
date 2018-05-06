@@ -107,13 +107,26 @@
  */
 
 
-// .menu-main-navigation-container {}
-
 .page-navigation-container ul {
 
   background-color: rgba(#fff, .8);
 
 }
+
+.page-navigation-container ul ul {
+
+  top: 100%;
+
+}
+
+.page-navigation-container ul ul a {
+
+  width: 100%;
+  min-width: 200px;
+
+}
+
+// .menu-main-navigation-container {}
 
 .main-navigation {
 
