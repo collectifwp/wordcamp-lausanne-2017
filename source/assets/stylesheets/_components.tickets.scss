@@ -25,6 +25,7 @@
 
   border-top: 3px double $color-border-strong;
   border-bottom: 3px double $color-border-strong;
+  border-color: $color-brand-primary;
   margin-bottom: $unit-default;
 
   thead {
@@ -197,5 +198,13 @@
     }
 
   }
+
+}
+
+// Fix submission button
+
+.tix-submit select {
+
+  margin-bottom: 1em;
 
 }
