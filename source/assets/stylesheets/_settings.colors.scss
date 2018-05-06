@@ -337,9 +337,9 @@ $color-grey-100:                  mix($local-offblack, #fff, 100%);  // Dark
  * Border
  */
 
-$color-border-weak:               tint($local-copper,80%);
-$color-border-normal:             tint($local-copper,40%);
-$color-border-strong:             $local-copper;
+$color-border-weak:               tint($local-gold,80%);
+$color-border-normal:             tint($local-gold,40%);
+$color-border-strong:             $local-gold;
 
 @include cc($color-border-weak, 'color-border-weak');
 @include cc($color-border-normal, 'color-border-normal');
