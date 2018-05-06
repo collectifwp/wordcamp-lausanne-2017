@@ -37,7 +37,7 @@
   /* Box-model */
   display: inline-block;
   padding: rem(7) rem(16);
-  border: 1px solid $color-button-regular;
+  border: 0 ;
 
   /* Typography */
   font-size: ms(0);
@@ -61,7 +61,7 @@
   &:focus,
   &:active {
 
-    color: $color-text-strong;
+    color: $color-text-invert;
     background-color: $color-button-regular-hover;
     text-decoration: none;
 
