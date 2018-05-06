@@ -1,0 +1,177 @@
+/* =Navigation : Sub-Menu
+===================================================== */
+
+/*
+ * Sub menu
+ */
+
+.menu-item-has-children {
+
+  background-color: rgba($color-brand-tertiary, .6);
+
+  .dropdown-toggle {
+
+    display: none;
+
+  }
+
+  @include breakpoint(small) {
+
+    background-color: transparent;
+
+    > a {
+
+      &:after {
+
+        position: relative;
+        top: -(rem(2));
+
+        display: inline-block;
+        border: rem(6) solid transparent;
+        margin-left: $unit-xs;
+
+        vertical-align: middle;
+
+        border-top-color: $color-link-hover;
+
+        content: "";
+
+      }
+
+    }
+
+    > a .dropdown-toggle {
+
+      display: inline-block;
+
+      display: none; // Hide temporarily
+
+      // position: relative;
+
+      // background-color: transparent;
+      // border: none;
+      // border-radius: 0;
+
+    }
+
+    &:hover > a,
+    &.focus > a {
+
+      color: $color-text-strong;
+      background-color: $color-link;
+
+      &:after {
+
+        border-top-color: $color-text-strong;
+
+      }
+
+    }
+
+    &:hover > .sub-menu,
+    &.focus > .sub-menu {
+
+      left: 0;
+
+    }
+
+    &.current-menu-item > a:after {
+
+      border-top-color: $color-text-strong;
+
+    }
+
+  }
+
+}
+
+.sub-menu {
+
+  @include list-reset();
+
+  .menu-item {
+
+    text-transform: none;
+    font-weight: $regular;
+    font-family: $font-body;
+
+  }
+
+  @include breakpoint(to-small) {
+
+    a {
+
+      padding-left: rem(40);
+
+      background-image: $image-bullet-color;
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: $unit-s 50%;
+
+      &:hover,
+      &:focus,
+      &.focus {
+
+        background-image: $image-bullet-dark;
+
+      }
+
+    }
+
+  }
+
+  @include breakpoint(small) {
+
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: $z-index-navigation-submenu;
+
+    min-width: rem(260);
+
+    background-color: $color-link;
+
+    .menu-item {
+
+      width: 100%;
+      margin: 0;
+      border-top: 1px solid rgba(255,255,255,.2);
+
+      text-align: left;
+
+    }
+
+    a {
+
+      padding: rem(10) $unit-s;
+
+      color: $color-text;
+
+    }
+
+  }
+
+  @include breakpoint(medium) {
+
+    a {
+
+      padding-left: $unit-m;
+      padding-right: $unit-m;
+
+    }
+
+  }
+
+  @include breakpoint(large) {
+
+    a {
+
+      padding-left: $unit-l;
+      padding-right: $unit-l;
+
+    }
+
+  }
+
+}
+

@@ -1,0 +1,185 @@
+/* =Navigation
+===================================================== */
+
+// Navigation
+//
+// Main navigation of the site
+//
+// Markup: navigation.html
+//
+// Style guide: 6.navigation
+
+/*
+ * Menu toggle
+ *
+ * Mobile menu switcher
+ */
+
+
+
+/*
+ * Main navigation
+ *
+ * Main header navigation
+ * Classes switch via JS on viewport width
+ */
+
+
+.page-navigation-container ul {
+
+  background-color: rgba(#fff, .8);
+
+}
+
+.page-navigation-container ul ul {
+
+  top: 100%;
+
+}
+
+.page-navigation-container ul ul a {
+
+  width: 100%;
+  min-width: 200px;
+
+}
+
+
+
+.main-navigation {
+
+  position: relative;
+
+  background-color: rgba(#000, .2);
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: rem(2);
+    background-color: $color-brand-primary;
+
+    content: "";
+
+  }
+
+  @include breakpoint(to-small) {
+
+    background-color: $color-brand-tertiary;
+
+
+
+    &.toggled-on .menu {
+
+      display: block;
+
+    }
+
+  }
+
+}
+
+
+
+.menu {
+
+  @include list-reset();
+  @include clearfix();
+
+  text-align: center;
+
+  @include breakpoint(small) {
+
+    display: block;
+
+  }
+
+  @include breakpoint(to-small) {
+
+    border-top: 1px solid rgba(255,255,255,.2);
+
+    display: none;
+
+    .toggled-on & {
+
+      display: block;
+
+    }
+
+  }
+
+}
+
+.menu-item {
+
+  position: relative;
+
+  margin: 0;
+  display: block;
+
+  font-family: $font-headline;
+  font-size: ms(0);
+  text-transform: uppercase;
+  font-weight: $bold;
+  text-align: left;
+
+  @include breakpoint(small) {
+
+    margin: 0 rem(1);
+    display: inline-block;
+
+    @include font-size(18);
+    line-height: em(24,18);
+    text-align: center;
+
+  }
+
+}
+
+.menu-item a {
+
+  display: block;
+  color: $color-link;
+  padding: $unit-xs $unit-s;
+
+  text-decoration: none;
+  transition: all .1s ease;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.focus {
+
+    color: #fff;
+    background-color: $color-brand-primary;
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: $unit-s $unit-m;
+
+  }
+
+  @include breakpoint(large) {
+
+    padding: $unit-m $unit-l;
+
+  }
+
+}
+
+.current-menu-item > a {
+
+  color: #fff;
+  background-color: $color-brand-primary;
+
+}
+
+// Additional Styles:
+
+@import "components.nav-menu-toggle";
+@import "components.nav-sub-menu";
