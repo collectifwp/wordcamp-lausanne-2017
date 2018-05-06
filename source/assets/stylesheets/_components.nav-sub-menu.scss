@@ -32,7 +32,7 @@
 
         vertical-align: middle;
 
-        border-top-color: $color-link-hover;
+        border-top-color: $color-link;
 
         content: "";
 
@@ -57,12 +57,12 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong;
+      color: #fff;
       background-color: $color-link;
 
       &:after {
 
-        border-top-color: $color-text-strong;
+        border-top-color: #fff;
 
       }
 
@@ -101,20 +101,7 @@
 
     a {
 
-      padding-left: rem(40);
-
-      background-image: $image-bullet-color;
-      background-repeat: no-repeat;
-      background-size: 12px;
-      background-position: $unit-s 50%;
-
-      &:hover,
-      &:focus,
-      &.focus {
-
-        background-image: $image-bullet-dark;
-
-      }
+      padding-left: 1em;
 
     }
 
