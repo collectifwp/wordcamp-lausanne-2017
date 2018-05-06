@@ -52,3 +52,18 @@
 
 }
 
+// Styles added by Manu, to Sassify
+
+.site-header .site-branding {
+  background: rgba(35,125,210,0.54);
+}
+
+@media (min-width:48em) {
+  .site-header .site-branding {
+    background: rgba(35,125,210,0.3);
+  }
+}
+
+.site-description {
+  color: hsla(0,0%,100%,0.8);
+}
