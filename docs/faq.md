@@ -52,3 +52,6 @@ a:hover, a:focus, a:active {
 
 Ils sont surchargés dans _elements.links.scss mais étrangement a:visited a été oublié.
 
+## Où est défini le rouge du H1?
+
+Dans _elements.headings.scss. Les headings ont des variables couleur: $color-text-heading-1, etc.
