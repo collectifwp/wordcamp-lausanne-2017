@@ -19,20 +19,13 @@
   background-size: fixed;
   background-image: $site-hero-path-small;
   
-  /* Couche bleu transclucide, pour rendre texte plus lisible */
-  &.site-branding {
-    background: rgba(35,125,210,0.54);
-  }
+
 
   @include breakpoint(medium) {
 
     background-image: $site-hero-path-large;
     background-position: 50% 50%;
     background-size: cover;
-
-    &.site-branding {
-      background: rgba(35,125,210,0.3);
-    }
 
   }
 
@@ -61,6 +54,3 @@
 
 }
 
-.site-description {
-  color: hsla(0,0%,100%,0.8);
-}
