@@ -48,7 +48,7 @@
   text-decoration: none;
 
   /* Visual */
-  color: #fff;
+  color: $color-button-text;
   background-color: $color-button-regular;
   border-radius: $border-radius-small;
   border-color: transparent;
@@ -61,7 +61,7 @@
   &:focus,
   &:active {
 
-    color: $color-text-invert;
+    color: $color-button-text-hover;
     background-color: $color-button-regular-hover;
     text-decoration: none;
 
