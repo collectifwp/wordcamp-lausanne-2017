@@ -31,7 +31,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link-hover;
+  color: #fff;
 
   border-radius: 0;
   background-color: rgba($color-brand-tertiary, .9);
@@ -43,7 +43,7 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
+    color: #fff;
     background-color: rgba($color-brand-tertiary, .9);
 
   }
@@ -72,7 +72,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link-hover;
+    border-top-color: #fff;
 
     content: "";
 
@@ -85,7 +85,7 @@
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link-hover;
+      border-bottom-color: $color-link;
 
     }
 
