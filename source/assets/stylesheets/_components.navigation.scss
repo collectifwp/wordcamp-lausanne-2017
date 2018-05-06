@@ -109,6 +109,12 @@
 
 // .menu-main-navigation-container {}
 
+.page-navigation-container ul {
+
+  background-color: rgba(#fff, .8);
+
+}
+
 .main-navigation {
 
   position: relative;
@@ -123,7 +129,7 @@
     right: 0;
 
     height: rem(2);
-    background-color: $color-link-hover;
+    background-color: $color-brand-primary;
 
     content: "";
 
@@ -209,7 +215,7 @@
 .menu-item a {
 
   display: block;
-  color: $color-link-hover;
+  color: $color-link;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
@@ -220,8 +226,8 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
-    background-color: $color-link;
+    color: #fff;
+    background-color: $color-brand-primary;
 
   }
 
@@ -241,8 +247,8 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong;
-  background-color: $color-link-hover;
+  color: #fff;
+  background-color: $color-brand-primary;
 
 }
 
