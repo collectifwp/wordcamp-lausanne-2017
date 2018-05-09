@@ -20,7 +20,6 @@
   background-image: $site-hero-path-small;
   
 
-
   @include breakpoint(medium) {
 
     background-image: $site-hero-path-large;
@@ -39,7 +38,7 @@
     bottom: 0;
     right: 0;
 
-    background-color: rgba($color-brand-tertiary, $site-hero-overlay);
+    // background-color: rgba($color-brand-tertiary, $site-hero-overlay);
 
     content: "";
 
