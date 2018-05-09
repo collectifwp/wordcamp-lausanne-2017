@@ -91,11 +91,16 @@
 // Style guide: 6
 
 // Components: Designed components, chunks of UI
+
 @import "components.buttons";
 @import "components.forms";
 @import "components.branding";
 @import "components.header";
+
+@import "components.nav-menu-toggle";
+@import "components.nav-sub-menu";
 @import "components.nav";
+
 @import "components.footer";
 @import "components.main";
 @import "components.post";
