@@ -1,0 +1,25 @@
+/* =Footer-widgets
+===================================================== */
+
+
+@media (min-width: $extra-large-value) {
+
+  #footer-widgets {
+
+    display: flex;
+
+  }
+
+  #footer-widgets .footer-widgets-block {
+
+    flex: 1 1;
+
+  }
+
+  #footer-widget-2 {
+
+    max-width: 30rem;
+
+  }
+
+}
