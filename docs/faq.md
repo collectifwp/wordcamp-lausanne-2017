@@ -55,3 +55,10 @@ Ils sont surchargés dans _elements.links.scss mais étrangement a:visited a ét
 ## Où est défini le rouge du H1?
 
 Dans _elements.headings.scss. Les headings ont des variables couleur: $color-text-heading-1, etc.
+
+## Manu, où as-tu mis les styles de la sidebar latérale?
+
+Dans le fichier _components.main.scss : c'est ici que la mise en page du bloc de contenu "Main" semblait logique. C'est notamment ici qu'est défini la largeur maximum du contenu, avec la variable $container-max-width... qui est définie (dans _settings.orther.scess) à rem(800), càd 800px exprimés en rem (donc 50rem, car 1 rem = 16px).
+
+Pour passer en 2-colonnes, je double cela à rem(1600).
+

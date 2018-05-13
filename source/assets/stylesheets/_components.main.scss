@@ -138,3 +138,18 @@
   text-align: left;
 
 }
+
+/*
+ * Added by Manu for WordCamp Lausanne: sidebar position
+ *
+ */
+
+.site-content {
+
+  @include breakpoint(extra-large) {
+
+    display: flex;
+
+  }
+
+}

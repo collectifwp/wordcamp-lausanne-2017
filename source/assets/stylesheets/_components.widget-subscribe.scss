@@ -12,14 +12,16 @@
 .jetpack_subscription_widget {
 
   text-align: center;
+  // overflow-x: hidden;
+  background-color: $color-brand-tertiary;
 
   &:before {
 
     // background-image: $image-pattern-01;
-    background-color: $color-brand-tertiary!important;
-    background-size: 120px;
-    background-attachment: fixed;
-    background-position: 50% 0;
+    // background-color: $color-brand-tertiary!important;
+    // background-size: 120px;
+    // background-attachment: fixed;
+    // background-position: 50% 0;
 
   }
 
