@@ -144,12 +144,27 @@
  *
  */
 
-.site-content {
+@media (min-width: $extra-large-value) {
 
-  @include breakpoint(extra-large) {
+  .site-content {
 
     display: flex;
 
   }
+  
+
+  .site-content .content-area,
+  .site-content .widget-area {
+
+    flex: 1 1;
+
+  }
+
+  .site-content .widget-area {
+
+    max-width: 30rem;
+
+  }
 
 }
+
