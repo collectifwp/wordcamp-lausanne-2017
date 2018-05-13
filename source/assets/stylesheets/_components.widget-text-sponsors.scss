@@ -10,8 +10,12 @@
 //
 // Style guide: 6.widget.text-sponsors
 
-#text-5 {
 
-  background-color: #fff;
+.wcb_widget_sponsors .sponsor-logo {
+  max-width: 300px;
+}
 
+.wcb_widget_sponsors .sponsor-logo img {
+  margin-left: auto;
+  margin-right: auto;
 }

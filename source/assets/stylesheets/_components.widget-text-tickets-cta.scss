@@ -9,49 +9,6 @@
 //
 // Style guide: 6.widget.text-tickets-cta
 
-#text-3,
-#text-4 {
-
-  &:before {
-
-    background-image: $image-pattern-01;
-    background-color: $color-brand-quaternary!important;
-    background-size: 120px;
-    background-attachment: fixed;
-    background-position: 50% 0;
-
-  }
-
-  @include breakpoint(medium) {
-
-    position: relative;
-
-    .widget-title {
-
-      text-align: left;
-
-    }
-
-    p {
-
-      margin-bottom: 0;
-      margin-right: rem(320);
-      text-align: left;
-
-    }
-
-    .realistic-ticket {
-
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin-top: -20px;
-
-    }
-
-  }
-
-}
 
 $realistic-ticket-width: 460px;
 $realistic-ticket-height: 140px;
