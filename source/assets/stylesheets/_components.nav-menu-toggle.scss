@@ -70,12 +70,12 @@
 
   &[aria-expanded="true"] {
 
-    color: $color-link;
+    color: #fff;
 
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link;
+      border-bottom-color: #fff;
 
     }
 
