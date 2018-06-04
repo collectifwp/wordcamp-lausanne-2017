@@ -2,7 +2,7 @@
 ===================================================== */
 
 /*
- * Sub menu
+ * Styling Dropdown Toggle
  */
 
 .menu-item-has-children {
@@ -46,12 +46,6 @@
 
       display: none; // Hide temporarily
 
-      // position: relative;
-
-      // background-color: transparent;
-      // border: none;
-      // border-radius: 0;
-
     }
 
     &:hover > a,
@@ -85,6 +79,10 @@
 
 }
 
+/*
+ * Styling Sub menu
+ */
+
 .sub-menu {
 
   @include list-reset();
@@ -101,7 +99,7 @@
 
     a {
 
-      padding-left: 1em;
+      padding-left: 2em;
 
     }
 
@@ -123,10 +121,18 @@
       width: 100%;
       margin: 0;
       border-top: 1px solid rgba(255,255,255,.2);
-
+      border-bottom: 1px solid $color-brand-primary;
       text-align: left;
 
+      &:hover,
+      &.current-menu-item {
+
+        border-top-color: $color-brand-primary;
+
+      }
+
     }
+
 
     a {
 
@@ -142,7 +148,7 @@
     
     }
 
-  }
+  } // breakpoint(small)
 
   @include breakpoint(medium) {
 
@@ -153,7 +159,7 @@
 
     }
 
-  }
+  } // breakpoint(medium)
 
   @include breakpoint(large) {
 
@@ -164,7 +170,7 @@
 
     }
 
-  }
+  } // breakpoint(large)
 
 }
 

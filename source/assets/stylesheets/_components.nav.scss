@@ -3,7 +3,11 @@
 
 // Navigation
 //
-// Main navigation of the site
+// Main navigation of the site. 
+// Classes used are: 
+// .page-navigation-container (applies only to main navigation in site header)
+// .main-navigation (same)
+// .menu and .menu-item (applies to all menus, also in Widgets).
 //
 // Markup: navigation.html
 //
@@ -25,22 +29,30 @@
  */
 
 
-.page-navigation-container ul {
+.page-navigation-container ul,
+.widget_nav_menu ul
+{
 
-  background-color: rgba(#fff, .8);
+  background-color: #fff;
 
-}
+  @include breakpoint(to-small) {
 
-.page-navigation-container ul ul {
+    // background-color: rgba(#fff, .8);
 
-  top: 100%;
+  }
 
-}
+  ul {
 
-.page-navigation-container ul ul a {
+    top: 100%;
 
-  width: 100%;
-  min-width: 200px;
+  }
+
+  ul a {
+
+    width: 100%;
+    min-width: 200px;
+
+  }
 
 }
 
@@ -49,6 +61,8 @@
 .main-navigation {
 
   position: relative;
+
+  z-index: 210;
 
   background-color: rgba(#000, .2);
 
@@ -178,8 +192,3 @@
   background-color: $color-brand-primary;
 
 }
-
-// Additional Styles:
-
-@import "components.nav-menu-toggle";
-@import "components.nav-sub-menu";

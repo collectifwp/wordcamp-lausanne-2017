@@ -1,0 +1,88 @@
+/* =Navigation in Widgets
+===================================================== */
+
+
+
+.header-widgets-block .widget_nav_menu,
+.site-footer .widget_nav_menu {
+  padding: 0;
+ }
+
+.widget_nav_menu ul.menu {
+  border-top: 2px solid $color-brand-primary;
+}
+
+
+// Header Widget Menu
+
+// Show and hide
+
+.widget_nav_menu {
+  
+  .menu {
+    display: none;
+  }
+
+  .widget-title {
+      
+  }
+
+  @include breakpoint(small) {
+
+    .menu {
+      display: block;
+    }
+    
+    .widget-title {
+      display: none;
+    }
+  
+  }
+  
+}
+
+
+// Header - Link to footer me$color-brand-tertiary;nu
+
+.header-widgets-block .widget_custom_html {
+
+  background-color: $color-brand-tertiary;
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  .menu-toggle {
+    font-size: 1em;
+    display: block;
+    color: #fff;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &::before {
+      content: '';
+    }
+  }
+
+}
+
+
+
+// Footer Menu
+
+// We display this footer menu on small screens only.
+// On large screens, it will show up in the header.
+
+.site-footer .menu {
+
+	display: block;
+	
+	@include breakpoint(small) {
+		
+		display: none;
+	
+	}
+	
+}
