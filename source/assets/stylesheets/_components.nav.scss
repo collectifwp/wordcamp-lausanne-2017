@@ -103,11 +103,12 @@
   @include list-reset();
   @include clearfix();
 
-  text-align: center;
+  text-align: left;
 
   @include breakpoint(small) {
 
     display: block;
+    padding: 0 1em;
 
   }
 

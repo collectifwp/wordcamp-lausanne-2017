@@ -85,6 +85,8 @@
 
 .sub-menu {
 
+
+
   @include list-reset();
 
   .menu-item {
@@ -116,12 +118,13 @@
 
     background-color: $color-link;
 
+    box-shadow: 0 0 10px 5px rgba(138, 138, 138, 0.15);
+
     .menu-item {
 
       width: 100%;
       margin: 0;
-      border-top: 1px solid rgba(255,255,255,.2);
-      border-bottom: 1px solid $color-brand-primary;
+      border-bottom: 2px solid $color-brand-primary;
       text-align: left;
 
       &:hover,

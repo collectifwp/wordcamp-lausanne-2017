@@ -3,7 +3,9 @@
 
 ## Où sont définies les images de l'en-tête?
 
-Dans le fichier SASS suivant: [source/assets/stylesheets/_settings.other.scss](https://github.com/wp-romandie/wp-lausanne-2018-css/blob/master/source/assets/stylesheets/_settings.other.scss).
+Dans le fichier SASS suivant: 
+
+[source/assets/stylesheets/_settings.other.scss](https://github.com/wp-romandie/wp-lausanne-2018-css/blob/master/source/assets/stylesheets/_settings.other.scss)
 
 C'est là qu'on trouve les variables suivantes:
 
@@ -34,6 +36,8 @@ $extra-large-value:             80em; // 1280px
 
 Le basculement p.ex. du menu mobile vers desktop se fait avec `@include breakpoint(small) {}`.
 
+Cette syntaxe est possible grâce à un Mixin SCSS. Ce mixin est défini dans: _tools.media-queries.scss.
+
 ## Comment se fait-il que les styles de base des liens (hover, visited) ne sont pas définis?
 
 Excellente question. Les couleurs bleu / violet, etc, sont définis dans les styles minimalistes de CampSite:
@@ -58,7 +62,9 @@ Dans _elements.headings.scss. Les headings ont des variables couleur: $color-tex
 
 ## Manu, où as-tu mis les styles de la sidebar latérale?
 
-Dans le fichier _components.main.scss : c'est ici que la mise en page du bloc de contenu "Main" semblait logique. C'est notamment ici qu'est défini la largeur maximum du contenu, avec la variable $container-max-width... qui est définie (dans _settings.orther.scess) à rem(800), càd 800px exprimés en rem (donc 50rem, car 1 rem = 16px).
+Dans le fichier _components.main.scss : c'est ici que la mise en page du bloc de contenu "Main" semblait logique. 
+
+C'est notamment ici qu'est défini la largeur maximum du contenu, avec la variable $container-max-width... qui est définie (dans _settings.orther.scess) à rem(800), càd 800px exprimés en rem (donc 50rem, car 1 rem = 16px).
 
 Pour passer en 2-colonnes, je double cela à rem(1600).
 
