@@ -1,5 +1,16 @@
 # Thème WordCamp Lausanne 2018 - Foire aux Questions
 
+## Où sont définies les couleurs?
+
+Dans _settings.colors.scss
+
+* Le rouge officiel: $local-gold: #D34516;
+* Un rouge plus sombre: $local-copper: #9A0500; 
+* Un bleu sombre: $local-thunder: #1C3F58;
+
+On peut voir le résultat dans le style guide:
+https://wp-romandie.github.io/wp-lausanne-2018-css/styleguide/section-1.html#kssref-1-colors
+
 
 ## Où sont définies les images de l'en-tête?
 

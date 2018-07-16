@@ -12,27 +12,52 @@
 // Style guide: 4.quote
 
 blockquote {
+	
+	margin: 0;
+	margin-bottom: rem(24);
+	font-size: 1.2em;
+  padding: 1em;	
+	border-left: 6px solid $local-gold;
+	color: $local-gold;
 
-  margin: 0;
-  margin-bottom: rem(24);
-
-}
-
-blockquote {
-
-  padding: 2em;
-  background-color: $color-grey-10;
-
+	
+	&:before {
+		
+	}
+	
   p {
 
     font-style: italic;
+		color: $local-gold;
 
   }
+	
+	p:first-child:before {
+		content: "\201C";
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+		font-style: italic;
+	}
+	
+	
 
   p:last-child {
 
     margin-bottom: 0;
 
   }
+	
+	p:last-child:after {
+	
+/*	  content: "\201D";
+	  font-size: 4em;
+	  line-height: 0.1em;
+	  margin-left: 0.25em;
+	  vertical-align: -0.4em;
+	  font-style: italic;*/
+	
+	}
 
 }
