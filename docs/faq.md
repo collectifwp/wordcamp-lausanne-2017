@@ -79,3 +79,6 @@ C'est notamment ici qu'est défini la largeur maximum du contenu, avec la variab
 
 Pour passer en 2-colonnes, je double cela à rem(1600).
 
+## Comment sont gérés les Sponsors?
+
+Voir [sponsors.md](sponsors.md)
