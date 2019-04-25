@@ -9,14 +9,14 @@ Dans _settings.colors.scss
 * Un bleu sombre: $local-thunder: #1C3F58;
 
 On peut voir le résultat dans le style guide:
-https://wp-romandie.github.io/wp-lausanne-2018-css/styleguide/section-1.html#kssref-1-colors
+https://wpromandie.github.io/wp-lausanne-2018-css/styleguide/section-1.html#kssref-1-colors
 
 
 ## Où sont définies les images de l'en-tête?
 
 Dans le fichier SASS suivant: 
 
-[source/assets/stylesheets/_settings.other.scss](https://github.com/wp-romandie/wp-lausanne-2018-css/blob/master/source/assets/stylesheets/_settings.other.scss)
+[source/assets/stylesheets/_settings.other.scss](https://github.com/wpromandie/wp-lausanne-2018-css/blob/master/source/assets/stylesheets/_settings.other.scss)
 
 C'est là qu'on trouve les variables suivantes:
 
